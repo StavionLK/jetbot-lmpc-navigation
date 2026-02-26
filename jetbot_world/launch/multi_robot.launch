@@ -1,0 +1,28 @@
+<launch>
+  <arg name="model" default="burger" doc="model type [burger, waffle, waffle_pi]"/>
+  <arg name="robot_yaml_file" default="$(find jetbot_world)/config/robots.yaml"/>
+
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find jetbot_world)/worlds/turtlebot3_house.world"/>
+    <arg name="paused" value="false"/>
+    <arg name="use_sim_time" value="true"/>
+    <arg name="gui" value="true"/>
+    <arg name="headless" value="false"/>
+    <arg name="debug" value="false"/>
+  </include>
+
+  <node pkg="rosparam" type="load_param" name="load_robots_params" args="$(arg robot_yaml_file)">
+
+  <for each="$(eval range(len(param('robots'))))" var="i" >
+    <group ns="$(eval param('robots')[i]['name'])">
+      <param name="robot_description" command="$(find xacro)/xacro --inorder $(find jetbot_world)/urdf/$(eval param('robots')[i]['urdf']) botname:=$(eval param('robots')[i]['name'])" />
+      
+      <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher" output="screen">
+        <param name="publish_frequency" type="double" value="50.0" />
+        <param name="tf_prefix" value="$(eval param('robots')[i]['name'])" />
+      </node>
+
+      <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-urdf -model $(eval param('robots')[i]['name']) -x $(eval param('robots')[i]['x_pos']) -y $(eval param('robots')[i]['y_pos']) -z $(eval param('robots')[i]['z_pos']) -Y $(eval param('robots')[i]['yaw']) -param robot_description" />
+    </group>
+  </for>
+</launch>

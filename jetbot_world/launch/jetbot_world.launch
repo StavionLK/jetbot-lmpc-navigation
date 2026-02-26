@@ -1,0 +1,34 @@
+<launch>
+  <arg name="model" default="$(env TURTLEBOT3_MODEL)" doc="model type [burger, waffle, waffle_pi]"/>
+  <arg name="x_pos" default="-6.5"/>
+  <arg name="y_pos" default="-1.0"/>
+  <arg name="z_pos" default="0.0"/>
+
+  <arg name="second_jetbot" default="jb_1"/>
+
+  <arg name="second_jb_x_pos" default=" -3.5"/>
+  <arg name="second_jb_y_pos" default="4.0"/>
+  <arg name="second_jb_z_pos" default=" 0.0"/>
+  <arg name="second_jb_yaw"   default=" 0"/>
+
+  <arg name="multi_robot_name" default=""/>
+
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find jetbot_world)/worlds/turtlebot3_house.world"/>
+    <arg name="paused" value="false"/>
+    <arg name="use_sim_time" value="true"/>
+    <arg name="gui" value="true"/>
+    <arg name="headless" value="false"/>
+    <arg name="debug" value="false"/>
+  </include>
+
+   <!-- <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-file $(find jetbot_world)/urdf/jetbot_real.urdf -urdf -model darwin -z 0.3417" /> -->
+   <param name="robot_description" command="$(find xacro)/xacro --inorder $(find jetbot_world)/urdf/jetbot_real.urdf.xacro" /> 
+
+  <node pkg="gazebo_ros" type="spawn_model" name="spawn_urdf"  args="-urdf -model jetbot_model -x $(arg x_pos) -y $(arg y_pos) -z $(arg z_pos) -param robot_description" />
+
+
+
+</launch>
+
+

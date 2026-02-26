@@ -1,0 +1,14 @@
+robots:
+  - name: jb_0
+    x_pos: -6.5
+    y_pos: -1.0
+    z_pos: 0.0
+    yaw: 0
+    urdf: jetbot_real.urdf.xacro
+  - name: jb_1
+    x_pos: -3.5
+    y_pos: 4.0
+    z_pos: 0.0
+    yaw: 0
+    urdf: jetbot_csi.urdf.xacro
+  # Add more robots as needed

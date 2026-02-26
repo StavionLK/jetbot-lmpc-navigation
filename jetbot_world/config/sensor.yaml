@@ -1,0 +1,9 @@
+sensor_config:
+  camera_enabled: true
+  imu_enabled: true
+  lidar_enabled: true
+  depth_camera: false
+  3d_lidar: false 
+  sonar_sensor: false
+  laser_visual: true
+  imu_visual: false
