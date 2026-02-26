@@ -1,0 +1,3360 @@
+<sdf version='1.7'>
+  <model name='short_road'>
+   
+
+    <model name='road_section_0'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.235065 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.235065 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>4.61275 10.4332 0 0 -0 0.286174</pose>
+    </model>
+    <model name='road_section_1'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.276285 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.276285 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>4.86285 10.4812 0 0 -0 0.107381</pose>
+    </model>
+    <model name='road_section_2'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.318657 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.318657 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>5.15953 10.4967 0 0 -0 0.004392</pose>
+    </model>
+    <model name='road_section_3'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.357855 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.357855 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>5.49755 10.4882 0 0 0 -0.0511</pose>
+    </model>
+    <model name='road_section_4'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.392001 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.392001 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>5.87169 10.4644 0 0 0 -0.075129</pose>
+    </model>
+    <model name='road_section_5'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.420398 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.420398 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>6.27672 10.4336 0 0 0 -0.076274</pose>
+    </model>
+    <model name='road_section_6'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.442999 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.442999 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>6.70743 10.4046 0 0 0 -0.058979</pose>
+    </model>
+    <model name='road_section_7'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.460202 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.460202 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>7.15857 10.3857 0 0 0 -0.025334</pose>
+    </model>
+    <model name='road_section_8'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.47279 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.47279 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>7.62492 10.3855 0 0 -0 0.023968</pose>
+    </model>
+    <model name='road_section_9'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.481596 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.481596 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>8.10115 10.412 0 0 -0 0.08637</pose>
+    </model>
+    <model name='road_section_10'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.483759 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.483759 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>8.58067 10.4657 0 0 -0 0.136697</pose>
+    </model>
+    <model name='road_section_11'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.475962 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.475962 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>9.05515 10.5371 0 0 -0 0.162422</pose>
+    </model>
+    <model name='road_section_12'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.457265 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.457265 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>9.51556 10.6129 0 0 -0 0.16385</pose>
+    </model>
+    <model name='road_section_13'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.427635 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.427635 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>9.95292 10.6796 0 0 -0 0.137902</pose>
+    </model>
+    <model name='road_section_14'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.388128 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.388128 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>10.3582 10.7238 0 0 -0 0.076229</pose>
+    </model>
+    <model name='road_section_15'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.341669 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.341669 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>10.7224 10.732 0 0 0 -0.03833</pose>
+    </model>
+    <model name='road_section_16'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.295047 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.295047 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>11.0365 10.6909 0 0 0 -0.236631</pose>
+    </model>
+    <model name='road_section_17'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.262788 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.262788 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>11.2916 10.587 0 0 0 -0.55586</pose>
+    </model>
+    <model name='road_section_18'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.267747 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.267747 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>11.4786 10.407 0 0 0 -0.972123</pose>
+    </model>
+    <model name='road_section_19'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.312787 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.312787 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>11.5937 10.1452 0 0 0 -1.31448</pose>
+    </model>
+    <model name='road_section_20'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.365935 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.365935 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>11.6434 9.81119 0 0 0 -1.5157</pose>
+    </model>
+    <model name='road_section_21'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.409355 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.409355 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>11.6406 9.42423 0 0 0 -1.63394</pose>
+    </model>
+    <model name='road_section_22'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.436008 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.436008 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>11.5984 9.00394 0 0 0 -1.70571</pose>
+    </model>
+    <model name='road_section_23'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.442881 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.442881 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>11.5299 8.56996 0 0 0 -1.74853</pose>
+    </model>
+    <model name='road_section_24'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.43368 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.43368 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>11.4468 8.13966 0 0 0 -1.77475</pose>
+    </model>
+    <model name='road_section_25'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.422627 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.422627 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>11.3549 7.72153 0 0 0 -1.80001</pose>
+    </model>
+    <model name='road_section_26'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.412348 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.412348 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>11.2547 7.31629 0 0 0 -1.82684</pose>
+    </model>
+    <model name='road_section_27'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.402871 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.402871 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>11.1459 6.9235 0 0 0 -1.85522</pose>
+    </model>
+    <model name='road_section_28'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.394228 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.394228 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>11.0285 6.5427 0 0 0 -1.88511</pose>
+    </model>
+    <model name='road_section_29'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.386449 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.386449 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>10.9021 6.17344 0 0 0 -1.91644</pose>
+    </model>
+    <model name='road_section_30'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.379561 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.379561 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>10.7665 5.81528 0 0 0 -1.94912</pose>
+    </model>
+    <model name='road_section_31'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.373591 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.373591 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>10.6216 5.46778 0 0 0 -1.98301</pose>
+    </model>
+    <model name='road_section_32'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.368561 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.368561 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>10.467 5.13047 0 0 0 -2.01797</pose>
+    </model>
+    <model name='road_section_33'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.364492 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.364492 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>10.3027 4.80291 0 0 0 -2.0538</pose>
+    </model>
+    <model name='road_section_34'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.361398 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.361398 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>10.1284 4.48465 0 0 0 -2.09029</pose>
+    </model>
+    <model name='road_section_35'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.359288 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.359288 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>9.94378 4.17524 0 0 0 -2.12721</pose>
+    </model>
+    <model name='road_section_36'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.358165 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.358165 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>9.74875 3.87424 0 0 0 -2.16431</pose>
+    </model>
+    <model name='road_section_37'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.358029 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.358029 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>9.54305 3.58119 0 0 0 -2.20134</pose>
+    </model>
+    <model name='road_section_38'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.358869 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.358869 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>9.32647 3.29565 0 0 0 -2.23805</pose>
+    </model>
+    <model name='road_section_39'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.360672 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.360672 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>9.09878 3.01717 0 0 0 -2.27418</pose>
+    </model>
+    <model name='road_section_40'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.363151 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.363151 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>8.85963 2.74562 0 0 0 -2.3114</pose>
+    </model>
+    <model name='road_section_41'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.365593 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.365593 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>8.60793 2.48227 0 0 0 -2.35558</pose>
+    </model>
+    <model name='road_section_42'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.36822 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.36822 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>8.34203 2.22964 0 0 0 -2.40783</pose>
+    </model>
+    <model name='road_section_43'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.371513 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.371513 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>8.06012 1.99046 0 0 0 -2.46794</pose>
+    </model>
+    <model name='road_section_44'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.376017 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.376017 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>7.76042 1.76747 0 0 0 -2.53546</pose>
+    </model>
+    <model name='road_section_45'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.382328 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.382328 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>7.44116 1.5634 0 0 0 -2.60962</pose>
+    </model>
+    <model name='road_section_46'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.391065 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.391065 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>7.10055 1.38098 0 0 0 -2.68928</pose>
+    </model>
+    <model name='road_section_47'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.402834 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.402834 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>6.73679 1.22294 0 0 0 -2.77294</pose>
+    </model>
+    <model name='road_section_48'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.418192 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.418192 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>6.34812 1.09202 0 0 0 -2.85883</pose>
+    </model>
+    <model name='road_section_49'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.433934 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.433934 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>5.93443 0.991807 0 0 0 -2.9474</pose>
+    </model>
+    <model name='road_section_50'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.406907 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.406907 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>5.51847 0.937481 0 0 0 -3.08033</pose>
+    </model>
+    <model name='road_section_51'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.322813 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.322813 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>5.15833 0.962159 0 0 -0 2.90944</pose>
+    </model>
+    <model name='road_section_52'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.263462 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.263462 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>4.91727 1.10079 0 0 -0 2.26205</pose>
+    </model>
+    <model name='road_section_53'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.319118 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.319118 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>4.81156 1.36035 0 0 -0 1.70743</pose>
+    </model>
+    <model name='road_section_54'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.404289 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.404289 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>4.80985 1.71957 0 0 -0 1.47158</pose>
+    </model>
+    <model name='road_section_55'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.468787 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.468787 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>4.87116 2.15145 0 0 -0 1.39371</pose>
+    </model>
+    <model name='road_section_56'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.500729 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.500729 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>4.95453 2.62898 0 0 -0 1.40195</pose>
+    </model>
+    <model name='road_section_57'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.504897 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.504897 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>5.02225 3.12693 0 0 -0 1.46901</pose>
+    </model>
+    <model name='road_section_58'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.503993 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.503993 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>5.05514 3.62996 0 0 -0 1.54207</pose>
+    </model>
+    <model name='road_section_59'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.503131 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.503131 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>5.05361 4.13327 0 0 -0 1.60568</pose>
+    </model>
+    <model name='road_section_60'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.501405 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.501405 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>5.02245 4.63438 0 0 -0 1.66021</pose>
+    </model>
+    <model name='road_section_61'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.498071 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.498071 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>4.96647 5.13084 0 0 -0 1.70611</pose>
+    </model>
+    <model name='road_section_62'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.492528 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.492528 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>4.89047 5.62018 0 0 -0 1.74385</pose>
+    </model>
+    <model name='road_section_63'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.484304 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.484304 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>4.79925 6.09995 0 0 -0 1.77377</pose>
+    </model>
+    <model name='road_section_64'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.473038 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.473038 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>4.69761 6.56768 0 0 -0 1.79602</pose>
+    </model>
+    <model name='road_section_65'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.458468 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.458468 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>4.59037 7.0209 0 0 -0 1.81051</pose>
+    </model>
+    <model name='road_section_66'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.440425 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.440425 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>4.48231 7.45716 0 0 -0 1.81682</pose>
+    </model>
+    <model name='road_section_67'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.418834 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.418834 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>4.37824 7.874 0 0 -0 1.81402</pose>
+    </model>
+    <model name='road_section_68'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.393735 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.393735 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>4.28297 8.26894 0 0 -0 1.80057</pose>
+    </model>
+    <model name='road_section_69'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.365313 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.365313 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>4.20129 8.63954 0 0 -0 1.77388</pose>
+    </model>
+    <model name='road_section_70'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.333976 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.333976 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>4.13801 8.98332 0 0 -0 1.7298</pose>
+    </model>
+    <model name='road_section_71'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.300498 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.300498 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>4.09793 9.29783 0 0 -0 1.6617</pose>
+    </model>
+    <model name='road_section_72'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.266309 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.266309 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>4.08586 9.58061 0 0 -0 1.55906</pose>
+    </model>
+    <model name='road_section_73'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.234021 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.234021 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>4.10658 9.82918 0 0 -0 1.40626</pose>
+    </model>
+    <model name='road_section_74'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.208265 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.208265 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>4.16492 10.0411 0 0 -0 1.18516</pose>
+    </model>
+    <model name='road_section_75'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.196106 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.196106 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>4.26566 10.2139 0 0 -0 0.891847</pose>
+    </model>
+    <model name='road_section_76'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0.204702 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0.204702 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>4.41362 10.3451 0 0 -0 0.566155</pose>
+    </model>
+    <model name='road_section_77'>
+      <static>1</static>
+      <link name='road_link'>
+        <visual name='road_visual'>
+          <geometry>
+            <box>
+              <size>0 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://road_material/materials/scripts</uri>
+              <uri>model://road_material/materials/textures</uri>
+              <name>MyRoad/Road</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='road_collision'>
+          <geometry>
+            <box>
+              <size>0 0.5 0.0001</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>4.5 10.4 0 0 -0 0</pose>
+    </model>
+  </model>
+</sdf>

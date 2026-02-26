@@ -1,0 +1,19 @@
+material MyRoad/Road
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.8 0.8 0.8 1.0
+      diffuse 1.0 1.0 1.0 1.0
+      specular 0.0 0.0 0.0 1.0
+      emissive 0.0 0.0 0.0 1.0
+
+      texture_unit
+      {
+        texture road_texture.jpg
+        scale 1 1          // repeat texture for more detail
+      }
+    }
+  }
+}
