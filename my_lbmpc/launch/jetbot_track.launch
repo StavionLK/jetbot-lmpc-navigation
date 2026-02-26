@@ -1,0 +1,30 @@
+<launch>
+  <!-- === Arguments === -->
+  <arg name="model" default="burger"/>
+  <arg name="use_sim_time" default="true"/>
+
+  <arg name="open_rviz" default="true"/>
+  <!-- Robot placement -->
+  <arg name="robot_name" default="jetbot_1"/>
+  <arg name="x_pos" default="9.625621740614353"/>  
+
+  <arg name="y_pos" default="4.5"/>
+  <arg name="z_pos" default="0.0"/>
+  <arg name="yaw"   default="0.0"/>
+
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find my_lbmpc)/worlds/empty.world"/>
+    <arg name="paused" value="false"/>
+    <arg name="use_sim_time" value="$(arg use_sim_time)"/>
+    <arg name="gui" value="true"/>
+  </include>
+
+
+
+    <param name="robot_description" command="$(find xacro)/xacro $(find jetbot_world)/urdf/jetbot_real.urdf.xacro"/>
+    <node pkg="gazebo_ros" type="spawn_model" name="spawn_urdf"
+          args="-urdf -param robot_description -model $(arg robot_name) -x $(arg x_pos) -y $(arg y_pos) -z $(arg z_pos) -Y $(arg yaw)"
+          output="screen"/>
+    <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher" output="screen"/>
+
+</launch>
