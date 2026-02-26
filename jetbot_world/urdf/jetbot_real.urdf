@@ -1,0 +1,1074 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Jetbot">
+  
+  <link name="base_footprint"/>
+
+  <joint name="base_joint" type="fixed">
+    <parent link="base_footprint"/>
+    <child link="base_link"/>
+    <origin xyz="0.0 0.0 0.05" rpy="0 0 0"/>
+  </joint>
+
+
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.00781963845778095 -7.35882317130787E-08 -0.000209926041797086"
+        rpy="0 0 0" />
+      <mass
+        value="0.045584055118095" />
+      <inertia
+        ixx="7.90379546337164E-05"
+        ixy="-6.67110738185195E-13"
+        ixz="-2.39290720776838E-07"
+        iyy="0.000115926497813917"
+        iyz="-1.15368484324182E-10"
+        izz="0.000189544079309469" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://jetbot_world/meshes/other_parts/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.223529411764706 1 0.352941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://jetbot_world/meshes/other_parts/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="wheel_right_link">
+    <inertial>
+      <origin
+        xyz="1.98363002065771E-08 -8.50421726095174E-10 0.00586401160881991"
+        rpy="0 0 0" />
+      <mass
+        value="0.00172858234067031" />
+      <inertia
+        ixx="6.56229488257871E-08"
+        ixy="-4.0657627162479E-11"
+        ixz="3.21252173208187E-14"
+        iyy="6.48514677017681E-08"
+        iyz="1.99615043771152E-15"
+        izz="3.47684231742651E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://jetbot_world/meshes/wheels/wheel_right_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.952941176470588 0.796078431372549 0.486274509803922 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://jetbot_world/meshes/wheels/wheel_right_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel_right_joint"
+    type="continuous">
+    <origin
+      xyz="0 -0.0796 -0.0149998499189951"
+      rpy="-1.57079632679489 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel_right_link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="wheel_right_rim">
+    <inertial>
+      <origin
+        xyz="-5.4423268058823E-08 -3.02317271563823E-08 -0.0013175684688612"
+        rpy="0 0 0" />
+      <mass
+        value="0.0150430722977072" />
+      <inertia
+        ixx="5.42837949690631E-06"
+        ixy="3.84011877778841E-12"
+        ixz="-6.00504131491743E-12"
+        iyy="5.42837483963373E-06"
+        iyz="-3.30832951882215E-12"
+        izz="8.62999669450023E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://jetbot_world/meshes/wheels/wheel_right_rim.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.188235294117647 0.231372549019608 0.588235294117647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://jetbot_world/meshes/wheels/wheel_right_rim.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel_right_rim_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="wheel_right_link" />
+    <child
+      link="wheel_right_rim" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="wheel_right_tire">
+    <inertial>
+      <origin
+        xyz="2.82158362829299E-05 0.00140580379860784 0.000181962684636737"
+        rpy="0 0 0" />
+      <mass
+        value="0.0254630899937217" />
+      <inertia
+        ixx="1.28912347647895E-05"
+        ixy="7.07465873148456E-10"
+        ixz="-9.06345483333125E-12"
+        iyy="1.29264691304977E-05"
+        iyz="-4.52275733373978E-10"
+        izz="2.22597285939851E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://jetbot_world/meshes/wheels/wheel_right_tire.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.0980392156862745 0.0980392156862745 0.0980392156862745 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://jetbot_world/meshes/wheels/wheel_right_tire.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel_right_tire_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="wheel_right_link" />
+    <child
+      link="wheel_right_tire" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="wheel_left_link">
+    <inertial>
+      <origin
+        xyz="2.3009393140816E-09 1.97207421781531E-08 -0.00586401160882002"
+        rpy="0 0 0" />
+      <mass
+        value="0.00172858234067031" />
+      <inertia
+        ixx="6.48580948386293E-08"
+        ixy="8.1986795876624E-11"
+        ixz="-7.05727936679317E-15"
+        iyy="6.56163216889261E-08"
+        iyz="-3.14039638015827E-14"
+        izz="3.47684231742651E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://jetbot_world/meshes/wheels/wheel_left_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.952941176470588 0.796078431372549 0.486274509803922 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://jetbot_world/meshes/wheels/wheel_left_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel_left_joint"
+    type="continuous">
+    <origin
+      xyz="0 0.0796 -0.0149998499189951"
+      rpy="-1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel_left_link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="wheel_left_rim">
+    <inertial>
+      <origin
+        xyz="-3.84671055148056E-08 -4.89502935754893E-08 0.00131756846886109"
+        rpy="0 0 0" />
+      <mass
+        value="0.0150430722977072" />
+      <inertia
+        ixx="5.42837615703599E-06"
+        ixy="4.37566736479211E-12"
+        ixz="4.21736389882695E-12"
+        iyy="5.4283781795041E-06"
+        iyz="5.40549773271856E-12"
+        izz="8.62999669450022E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://jetbot_world/meshes/wheels/wheel_left_rim.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.188235294117647 0.231372549019608 0.588235294117647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://jetbot_world/meshes/wheels/wheel_left_rim.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel_left_rim_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="wheel_left_link" />
+    <child
+      link="wheel_left_rim" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="wheel_left_tire">
+    <inertial>
+      <origin
+        xyz="0.00139253923871222 -0.000194717544789592 -0.000181962684636799"
+        rpy="0 0 0" />
+      <mass
+        value="0.0254630899937217" />
+      <inertia
+        ixx="1.29258070859562E-05"
+        ixy="-4.83620972217383E-09"
+        ixz="4.48006012970371E-10"
+        iyy="1.28918968093311E-05"
+        iyz="-6.26585791959336E-11"
+        izz="2.22597285939851E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://jetbot_world/meshes/wheels/wheel_left_tire.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.0980392156862745 0.0980392156862745 0.0980392156862745 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://jetbot_world/meshes/wheels/wheel_left_tire.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel_left_tire_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="wheel_left_link" />
+    <child
+      link="wheel_left_tire" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="camera_mount_link">
+    <inertial>
+      <origin
+        xyz="0.0911446606387492 -5.00000000013164E-05 0.0475547495822917"
+        rpy="0 0 0" />
+      <mass
+        value="0.00369253564371622" />
+      <inertia
+        ixx="7.11782812945527E-07"
+        ixy="-3.32390099825911E-21"
+        ixz="1.1528802234911E-23"
+        iyy="7.28653732283989E-08"
+        iyz="1.79708825096588E-22"
+        izz="7.14964958537606E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://jetbot_world/meshes/realsense/camera_mount_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0.345098039215686 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://jetbot_world/meshes/realsense/camera_mount_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="camera_mount_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="camera_mount_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="camera_link">
+    <inertial>
+      <origin
+        xyz="0.104505569284287 0.00251089945216483 0.0474874189920585"
+        rpy="0 0 0" />
+      <mass
+        value="0.0294229179644187" />
+      <inertia
+        ixx="2.18815235786117E-05"
+        ixy="2.75098516448229E-07"
+        ixz="7.68689291749069E-11"
+        iyy="1.35440746294821E-06"
+        iyz="1.72750913510838E-09"
+        izz="2.09152095144145E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://jetbot_world/meshes/realsense/camera_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://jetbot_world/meshes/realsense/camera_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="camera_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="camera_mount_link" />
+    <child
+      link="camera_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="caster_back_link">
+    <inertial>
+      <origin
+        xyz="-0.00973608929282141 0.0160138996536298 0.000112305501830591"
+        rpy="0 0 0" />
+      <mass
+        value="0.0122543299069677" />
+      <inertia
+        ixx="1.03465897444937E-06"
+        ixy="4.08895923420779E-08"
+        ixz="2.41090924462367E-13"
+        iyy="1.24920234693942E-06"
+        iyz="-2.2498975199297E-12"
+        izz="1.2900058431033E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://jetbot_world/meshes/other_parts/caster_back_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.627450980392157 0.627450980392157 0.627450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://jetbot_world/meshes/other_parts/caster_back_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="caster_back_joint"
+    type="fixed">
+    <origin
+      xyz="-0.072 0 -0.0103157534698361"
+      rpy="-1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="caster_back_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="caster_front_link">
+    <inertial>
+      <origin
+        xyz="-0.00973608929282145 0.0136318109633328 0.00011230550183057"
+        rpy="0 0 0" />
+      <mass
+        value="0.0122543299069677" />
+      <inertia
+        ixx="1.03465897444937E-06"
+        ixy="4.08895923420787E-08"
+        ixz="2.41090924810355E-13"
+        iyy="1.24920234693941E-06"
+        iyz="-2.24989751966103E-12"
+        izz="1.29000584310329E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://jetbot_world/meshes/other_parts/caster_front_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.627450980392157 0.627450980392157 0.627450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://jetbot_world/meshes/other_parts/caster_front_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="caster_front_joint"
+    type="fixed">
+    <origin
+      xyz="0.072 0 -0.0126978421601332"
+      rpy="-1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="caster_front_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="imu_link">
+    <inertial>
+      <origin
+        xyz="0.00785413895950092 0.000589850419601447 -0.00363505947193948"
+        rpy="0 0 0" />
+      <mass
+        value="0.0511068131705108" />
+      <inertia
+        ixx="3.02554869448374E-05"
+        ixy="-6.81147489939493E-08"
+        ixz="4.3124398785099E-10"
+        iyy="3.79539557275355E-05"
+        iyz="-1.32997366822506E-10"
+        izz="6.69860000874932E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://jetbot_world/meshes/other_parts/imu_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.5 0.5 0.5 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://jetbot_world/meshes/other_parts/imu_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="imu_joint"
+    type="fixed">
+    <origin
+      xyz="-0.00987996130762421 -0.000612791192577962 0.02311148"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="imu_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="base_scan">
+    <inertial>
+      <origin
+        xyz="-0.013480243056544 0.000481284255951939 -0.00102869936495666"
+        rpy="0 0 0" />
+      <mass
+        value="0.0634432857550415" />
+      <inertia
+        ixx="1.68383298504221E-05"
+        ixy="-1.0448046286551E-07"
+        ixz="4.28825686069912E-07"
+        iyy="2.10729825490332E-05"
+        iyz="-9.43318165957986E-09"
+        izz="3.56809250260432E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://jetbot_world/meshes/other_parts/base_scan.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://jetbot_world/meshes/other_parts/base_scan.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="scan_joint"
+    type="fixed">
+    <origin
+      xyz="0.005050049260789 0.000300068757988995 0.092186480000001"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="base_scan" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="left_motor_link">
+    <inertial>
+      <origin
+        xyz="-2.95081696598254E-07 0.0340253884275023 -0.0216175641159498"
+        rpy="0 0 0" />
+      <mass
+        value="0.0142497272964593" />
+      <inertia
+        ixx="1.363828934402E-06"
+        ixy="-1.47318833570828E-11"
+        ixz="-3.04947037598095E-10"
+        iyy="2.22876633823434E-06"
+        iyz="7.05904980580848E-09"
+        izz="1.38872041914448E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://jetbot_world/meshes/other_parts/left_motor_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://jetbot_world/meshes/other_parts/left_motor_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_motor_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="left_motor_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="right_motor_link">
+    <inertial>
+      <origin
+        xyz="2.9508169580722E-07 -0.0340253884275023 -0.0216175641159498"
+        rpy="0 0 0" />
+      <mass
+        value="0.0142497272964593" />
+      <inertia
+        ixx="1.36382893440199E-06"
+        ixy="-1.4731883386706E-11"
+        ixz="3.0494703759845E-10"
+        iyy="2.22876633823434E-06"
+        iyz="-7.05904980580746E-09"
+        izz="1.38872041914447E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://jetbot_world/meshes/other_parts/right_motor_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://jetbot_world/meshes/other_parts/right_motor_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_motor_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="right_motor_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="upper_plate_link">
+    <inertial>
+      <origin
+        xyz="-0.00767109086663368 0.00605296729060913 0.0621864800000008"
+        rpy="0 0 0" />
+      <mass
+        value="0.017501498901108" />
+      <inertia
+        ixx="8.93579854534511E-06"
+        ixy="-2.74359099373368E-07"
+        ixz="4.81575673334949E-19"
+        iyy="1.85512486025031E-05"
+        iyz="7.07344062963383E-21"
+        izz="2.74607948994966E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://jetbot_world/meshes/other_parts/upper_plate_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.3 0.3 0.3 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://jetbot_world/meshes/other_parts/upper_plate_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="upper_plate_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="upper_plate_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="antenna_link">
+    <inertial>
+      <origin
+        xyz="-0.0660028995154912 4.40577031377808E-05 0.046811826812688"
+        rpy="0 0 0" />
+      <mass
+        value="0.0134623075785536" />
+      <inertia
+        ixx="5.56374948010225E-06"
+        ixy="-1.03911483629354E-10"
+        ixz="-1.35565928440356E-09"
+        iyy="5.56559707819264E-06"
+        iyz="2.22326930039963E-08"
+        izz="1.27639331293959E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://jetbot_world/meshes/other_parts/antenna_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.0941176470588235 0.109803921568627 0.12156862745098 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://jetbot_world/meshes/other_parts/antenna_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="antenna_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="antenna_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="bolt1_link">
+    <inertial>
+      <origin
+        xyz="-0.00455766525705633 -0.00317236412008241 0.0247802088927017"
+        rpy="0 0 0" />
+      <mass
+        value="0.00350899316323701" />
+      <inertia
+        ixx="2.155192655442E-07"
+        ixy="9.56888278033086E-24"
+        ixz="-1.90766612358315E-21"
+        iyy="2.155192655442E-07"
+        iyz="-1.87384696573834E-23"
+        izz="1.35592340647674E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://jetbot_world/meshes/other_parts/bolt1_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.952941176470588 0.796078431372549 0.486274509803922 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://jetbot_world/meshes/other_parts/bolt1_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="bolt1_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="bolt1_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="bolt2_link">
+    <inertial>
+      <origin
+        xyz="-0.00194995073921093 0.000300068757989755 0.07618648"
+        rpy="0 0 0" />
+      <mass
+        value="0.00138168957720949" />
+      <inertia
+        ixx="7.45830222388665E-08"
+        ixy="3.22236047148893E-24"
+        ixz="-2.87219091256268E-24"
+        iyy="7.45830222388665E-08"
+        iyz="-7.36261831006086E-24"
+        izz="5.24004685174395E-09" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://jetbot_world/meshes/other_parts/bolt2_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.0941176470588235 0.109803921568627 0.12156862745098 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://jetbot_world/meshes/other_parts/bolt2_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="bolt2_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="bolt2_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="nano_link">
+    <inertial>
+      <origin
+        xyz="-0.00451688299579642 -0.00383913355729881 0.0407445974225003"
+        rpy="0 0 0" />
+      <mass
+        value="0.0559886683886946" />
+      <inertia
+        ixx="1.11286118138229E-05"
+        ixy="-6.96076101617625E-09"
+        ixz="1.44681908116963E-07"
+        iyy="2.01937826489502E-05"
+        iyz="-1.30775142928514E-08"
+        izz="2.98989437667499E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://jetbot_world/meshes/other_parts/nano_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.4 0.4 0.4 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://jetbot_world/meshes/other_parts/nano_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="nano_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="nano_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
